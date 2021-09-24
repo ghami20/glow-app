@@ -1,25 +1,25 @@
 :root {
-	--bg-green: #2ECC71;
-	--bg-orange: #FFA726;
-	--bg-dark: #212121;
-	--bg-light: #FDFEFE;
-	--bg-blue: #29B6F6;
-	--font-title: 30px;
-	--font-subtitle: 24px;
-	--font-text-big: 18px;
-	--font-text-normal: 16px;
-	--font-montserrat: 'Montserrat', sans-serif;
+  --bg-green: #2ECC71;
+  --bg-orange: #FFA726;
+  --bg-dark: #212121;
+  --bg-light: #FDFEFE;
+  --bg-blue: #29B6F6;
+  --font-title: 30px;
+  --font-subtitle: 24px;
+  --font-text-big: 18px;
+  --font-text-normal: 16px;
+  --font-montserrat: 'Montserrat', sans-serif;
 }
 
 * {
-	padding: 0;
-	margin: 0;
-	box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
 }
 
 body {
-	font-family: var(--font-montserrat); 	
-	min-height: 100vh;
+  font-family: var(--font-montserrat);
+  min-height: 100vh;
 }
 
 .bg_rgba1 {
@@ -35,101 +35,147 @@ body {
 }
 
 .btn-sesion {
-	background-color: var(--bg-green);
+  background-color: var(--bg-green);
 }
-.carousel-caption h5{
-	font-weight: bold;
-	font-size: 30px;
-	text-align: center;
+
+.carousel-caption h5 {
+  font-weight: bold;
+  font-size: 30px;
+  text-align: center;
 }
 
 .carousel-container {
-	width: 100%;
+  width: 100%;
 }
 
 .carousel-item {
-	height: 300px;
+  height: 300px;
 }
 
 .filter-by {
-	width: 100%;
-	display: inline-flex;
-	justify-content: space-around;
-	align-items: center	;
+  width: 100%;
+  display: inline-flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
 }
 
 .footer {
-
-	width: 100%;
-	height: 100px;
-	background-color: var(--bg-orange);
-	box-shadow: 0px -6px 19px -9px rgba(0,0,0,0.75);
+  width: 100%;
+  height: 100px;
+  background-color: var(--bg-orange);
+  box-shadow: 0px -6px 19px -9px rgba(0, 0, 0, 0.75);
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .footer ul {
-	width: 100%;
-	height: 50px;
-	padding-left: 0;
-	list-style: none;
-	display: inline-flex;
-	justify-content: space-around;
-	align-items: center;
+  width: 50%;
+  height: 50px;
+  padding-left: 0;
+  list-style: none;
+  display: inline-flex;
+  justify-content: space-around;
+  align-items: center;
 }
 
 .footer i:hover {
-	cursor: pointer;
+  cursor: pointer;
 }
 
 .logo {
-	color: var(--bg-orange);
+  color: var(--bg-orange);
 }
 
-.map-container{
-	display: flex;
-	flex-direction: column;
-	justify-content: space-around;
-	align-items: center;
-	margin-bottom: 3rem;
+.map-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  margin-bottom: 3rem;
 }
 
-.map-img{
-	width: 80%;
-	height: 80%;
-	border-radius: 10px;
-	margin-top: 1rem;
-	box-shadow: 0px 0px 11px -2px rgba(0,0,0,0.75);
+.map-img {
+  width: 80%;
+  height: 80%;
+  border-radius: 10px;
+  margin-top: 1rem;
+  box-shadow: 0px 0px 11px -2px rgba(0, 0, 0, 0.75);
 }
+
 .modal-body {
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
+
 .modal-body a {
-	width: 100%;
-	min-height: 50px;
-	display: inline-flex;
-	justify-content: center;
-	align-items: center;
-	border-left: 5px solid var(--bg-green);
-	margin-bottom: 5px;
+  width: 100%;
+  min-height: 50px;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  border-left: 5px solid var(--bg-green);
+  margin-bottom: 5px;
 }
 
 .modal-body a:hover {
-	cursor: pointer;
+  cursor: pointer;
 }
 
 .modal-body span {
-	margin-left: 1rem;
+  margin-left: 1rem;
+}
+
+.reciclar-container {
+  margin-top: 2rem;
+}
+
+.info-container {
+  margin-top: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+}
+
+.reciclar-item {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: center;
+}
+
+.reciclar-item h5 {
+  font-weight: 600;
+  text-align: center;
+}
+
+.reciclar-item img {
+  margin: 1rem;
 }
 
 .section-container {
-	width: 100%;
+  width: 100%;
 }
 
 @media screen and (min-width: 400px) {
-	.map-img {
-		width: 70%;
-		height: 70%;
-	}
+  .map-img {
+    width: 70%;
+    height: 70%;
+  }
+}
+
+@media screen and (min-width:1000px) {
+  .info-container {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  .reciclar-item {
+    width: 45%;
+    flex-basis: 45%;
+  }
 }

@@ -1,6 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
-
+<html lang="es">
 <head>
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta charset="UTF-8"/>
@@ -15,42 +14,9 @@
 	<title>Glow</title>
 </head>
 <body>
-	<header>
-		<nav class="navbar ">
-			<div class="container-fluid">
-				<a class="navbar-brand logo" href="#">glow</a>
-				<!-- Button trigger modal -->
-				<button type="button" class="btn btn-sesion" data-bs-toggle="modal" data-bs-target="#exampleModal">
-					Iniciar sesión
-				</button>
-
-				<!-- Modal -->
-				<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-					<div class="modal-dialog">
-						<div class="modal-content">
-							<div class="modal-header">
-								<h5 class="modal-title" id="exampleModalLabel">Inicia sesión con tu cuenta</h5>
-								<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-							</div>
-							<div class="modal-body">
-								<a>
-									<img width="50px" height="50px" src="./assets/facebook-icon.png" alt="fb"> 
-									<span>Facebook</span> 
-								</a>
-								<a>
-									<img style="margin-left: 5px;" width="35px" height="35px" src="./assets/gogle-icon.png" alt="google"> 
-									<span>Google</span>
-								</a>
-							</div>
-							<div class="modal-footer d-flex justify-content-center">
-								<button type="button" class="btn btn-success">Iniciar sesión</button>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</nav>
-	</header>
+	<!--HEADER-->
+	<?php require "views/shared/header/header.php" ?>
+	<!--CONTENIDO-->
 	<div class="section-container">
 		<section class="carousel-container">
 			<div id="carouselExampleDark" class="carousel carousel-dark slide" data-bs-ride="carousel">
@@ -81,6 +47,46 @@
 						</button>
 				</div>
 		</section>
+		<section class="reciclar-container" >
+			<h1 class="text-center"> <img width="50px" heigth="50px"  src="./assets/leaf (1).png" alt="leaf"> ¿Qué podemos reciclar?  <img width="50px" heigth="50px" src="./assets/leaf (1).png" alt="leaf"></h1>
+			<div class="info-container">
+				<div class="reciclar-item">
+					<h5>Envases de plástico</h5>
+					<div class="d-flex flex-row">
+						<img width="80px" heigth="80px" src="./assets/water-bottle.png" alt="botella">
+						<p>Reducir su consumo, reutilizar y reciclar son las tres acciones básicas para reducir su impacto, ya que el plástico tarda alrededor de 700 años en degradarse.</p>
+					</div>
+				</div>
+				<div class="reciclar-item">
+					<h5>Tetrabriks</h5>
+					<div class="d-flex flex-row">
+						<img width="80px" heigth="80px" src="./assets/pack-of-milk.png" alt="botella">
+						<p>¿Sabías que con 6 briks puede hacerse una caja de zapatos? Reciclar el brik de leche o de jugo es muy sencillo. Tan solo debemos depositarlo en el contenedor amarillo y así conseguir darles una segunda vida.</p>
+					</div>
+				</div>
+				<div class="reciclar-item">
+					<h5>Latas</h5>
+					<div class="d-flex flex-row">
+						<img width="80px" heigth="60px" src="./assets/soda-can.png" alt="botella">
+						<p>Este tipo de envase está siempre presente en nuestra cocina. ¿Quién no tiene una lata de refresco o de conservas en el frigorífico?  Las latas están compuestas de aluminio y se pueden reciclar un número ilimitado de veces. ¡Al contenedor amarillo!</p>
+					</div>
+				</div>
+				<div class="reciclar-item">
+					<h5>Envases de papel y cartón</h5>
+					<div class="d-flex flex-row">
+						<img width="80px" heigth="80px" src="./assets/paper.png" alt="botella">
+						<p>Todos los materiales de papel y cartón deben ir al contenedor azul para ser reciclados y ayudar a reducir la sobreexplotación de los recursos naturales</p>
+					</div>
+				</div>
+				<div class="reciclar-item">
+					<h5>Vidrio</h5>
+					<div class="d-flex flex-row">
+						<img width="80px" heigth="50px" src="./assets/glass.png" alt="botella">
+						<p>Este material se puede volver a reutilizar mediante un proceso de lavado de desechos o a través de su fundición y puede ser reciclado al 100% una cantidad indefinida de veces. Para ello debemos separarlos del resto de materiales. ¡Al contenedor verde! </p>
+					</div>
+				</div>
+			</div>
+		</section>
 		<section class="map-container mt-4">
 			<h1 class="text-center">¿Dónde reciclo?</h1>
 			<div class="filter-by">
@@ -96,13 +102,8 @@
 			<img class="map-img" src="./assets/google-maps-bs-as.jpg" alt="map">
 		</section>		
 	</div>
-	<footer class="footer">
-		<ul>
-			<li><i class="bi bi-facebook"></i></li>
-			<li><i class="bi bi-twitter"></i></li>
-			<li><i class="bi bi-instagram"></i></li>
-			<li><i class="bi bi-youtube"></i></li>
-		</ul>	
-	</footer>
+	<!--FOOTER-->
+	<?php require "views/shared/footer/footer.php" ?>
+
 </body>
 </html>
