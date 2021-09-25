@@ -129,7 +129,7 @@ body {
   flex-direction: column;
   justify-content: space-around;
   align-items: center;
-  margin-bottom: 3rem;
+  padding-bottom: 3rem;
 }
 
 .map-img {
@@ -163,6 +163,10 @@ body {
 
 .modal-body span {
   margin-left: 1rem;
+}
+
+.navbar {
+  min-height: 15vh;
 }
 
 .reciclar-container {
