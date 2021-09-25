@@ -18,7 +18,7 @@
 }
 
 body {
-  font-family: var(--font-montserrat);
+  font-family: 'Varela Round', sans-serif;
   min-height: 100vh;
 }
 
@@ -85,6 +85,41 @@ body {
   cursor: pointer;
 }
 
+.info-container {
+  margin: auto;
+  margin-top: 2rem;
+  width: 95%;
+  height: 50vh;
+  padding: 4rem 3rem 4rem 3rem;
+  background-color: var(--bg-orange);
+  text-align: center;
+  border-bottom-left-radius: 30%;
+  border-bottom-right-radius: 40%;
+  border-top-right-radius: 30%;
+  border-top-left-radius: 40%;
+  color: var(--bg-light);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.info-container h3 {
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+}
+
+.info-container p {
+  font-size: 18px;
+}
+
+#trees {
+  width: "60%";
+  height: "60%";
+  margin-right: 1rem;
+}
+
 .logo {
   color: var(--bg-orange);
 }
@@ -134,7 +169,7 @@ body {
   margin-top: 2rem;
 }
 
-.info-container {
+.reciclar-info-container {
   margin-top: 2rem;
   display: flex;
   flex-direction: column;
@@ -162,6 +197,10 @@ body {
   width: 100%;
 }
 
+section {
+  box-shadow: 0px 7px 12px -9px rgba(0, 0, 0, 0.75);
+}
+
 @media screen and (min-width: 400px) {
   .map-img {
     width: 70%;
@@ -170,12 +209,17 @@ body {
 }
 
 @media screen and (min-width:1000px) {
-  .info-container {
+  .reciclar-info-container {
     flex-direction: row;
     flex-wrap: wrap;
   }
   .reciclar-item {
     width: 45%;
     flex-basis: 45%;
+  }
+  #trees {
+    width: "90%";
+    height: "90%";
+    margin-right: 1rem;
   }
 }
