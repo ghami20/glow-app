@@ -8,7 +8,7 @@
   --font-subtitle: 24px;
   --font-text-big: 18px;
   --font-text-normal: 16px;
-  --font-montserrat: 'Montserrat', sans-serif;
+  --font-varela: 'Varela Round', sans-serif;
 }
 
 * {
@@ -18,20 +18,18 @@
 }
 
 body {
-  font-family: 'Varela Round', sans-serif;
+  font-family: var(--font-varela);
   min-height: 100vh;
 }
 
 .bg_rgba1 {
-  background: linear-gradient(0deg, rgba(0, 0, 0, 1), rgba(255, 255, 255, 0.2)), url('./assets/john-cameron-QukrVl1F9Q0-unsplash.jpg');
-  height: 500px;
-  border: 1px solid black;
+  background: linear-gradient(0deg, rgba(0, 0, 0, 1), rgba(201, 200, 200, 0.2)), url('./assets/john-cameron-QukrVl1F9Q0-unsplash.jpg');
+  height: 600px;
 }
 
 .bg_rgba2 {
   background: linear-gradient(0deg, rgba(0, 0, 0, 1), rgba(255, 255, 255, 0.2)), url('./assets/nick-fewings--2lJGRIY5P0-unsplash.jpg');
-  height: 500px;
-  border: 1px solid black;
+  height: 600px;
 }
 
 .btn-sesion {
@@ -42,6 +40,7 @@ body {
   font-weight: bold;
   font-size: 30px;
   text-align: center;
+  padding-bottom: 5rem;
 }
 
 .carousel-container {
@@ -49,7 +48,7 @@ body {
 }
 
 .carousel-item {
-  height: 300px;
+  height: 400px;
 }
 
 .filter-by {
@@ -90,7 +89,7 @@ body {
   margin-top: 2rem;
   width: 95%;
   height: 50vh;
-  padding: 4rem 3rem 4rem 3rem;
+  padding: 7rem 3rem 5rem 3rem;
   background-color: var(--bg-orange);
   text-align: center;
   border-bottom-left-radius: 30%;
@@ -111,7 +110,7 @@ body {
 }
 
 .info-container p {
-  font-size: 18px;
+  font-size: var(--font-text-normal);
 }
 
 #trees {
@@ -122,6 +121,10 @@ body {
 
 .logo {
   color: var(--bg-orange);
+}
+
+.logo:hover {
+  cursor: pointer;
 }
 
 .map-container {
@@ -186,6 +189,7 @@ body {
   flex-direction: column;
   justify-content: start;
   align-items: center;
+  font-size: 14px;
 }
 
 .reciclar-item h5 {
@@ -197,12 +201,23 @@ body {
   margin: 1rem;
 }
 
+.reciclar-container-img {
+  margin: 1rem;
+  width: 20px;
+  height: 20px;
+}
+
 .section-container {
   width: 100%;
 }
 
 section {
   box-shadow: 0px 7px 12px -9px rgba(0, 0, 0, 0.75);
+}
+
+.tree-img {
+  width: 60px;
+  height: 60px;
 }
 
 @media screen and (min-width: 400px) {
@@ -225,5 +240,12 @@ section {
     width: "90%";
     height: "90%";
     margin-right: 1rem;
+  }
+  .info-container {
+    padding-top: 3rem;
+  }
+  .tree-img {
+    width: 80px;
+    height: 80px;
   }
 }
