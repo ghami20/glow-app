@@ -34,6 +34,9 @@ body {
 
 .btn-sesion {
   background-color: var(--bg-green);
+  color: #FDFEFE;
+  width: 40%;
+  height: 3rem;
 }
 
 .carousel-caption h5 {
@@ -227,7 +230,17 @@ section {
   }
 }
 
+@media screen and (min-width: 600px) {
+  .btn-sesion {
+    width: 30%;
+    font-size: var(--font-text-big);
+  }
+}
+
 @media screen and (min-width:1000px) {
+  .btn-sesion {
+    width: 20%;
+  }
   .reciclar-info-container {
     flex-direction: row;
     flex-wrap: wrap;

@@ -18,8 +18,9 @@
 
 .btn {
   margin-top: 2rem;
-  margin-bottom: 2rem;
+  margin-bottom: 1.5rem;
   background-color: #2ECC71;
+  color: #FDFEFE;
 }
 
 .modal-footer {

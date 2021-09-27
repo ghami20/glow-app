@@ -11,6 +11,10 @@
   --font-varela: 'Varela Round', sans-serif;
 }
 
+body {
+  position: relative;
+}
+
 .container {
   background-image: url('../../assets/eco-friendly.png');
   background-position: center;
