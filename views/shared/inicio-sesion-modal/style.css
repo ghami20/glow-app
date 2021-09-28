@@ -23,6 +23,17 @@
   color: #FDFEFE;
 }
 
+.error {
+  color: rgb(238, 44, 44);
+  font-size: 12px;
+  font-weight: bold;
+}
+
+#emailError,
+#passError {
+  display: none;
+}
+
 .modal-footer {
   margin-top: 2rem;
   margin-bottom: 2rem;
@@ -30,4 +41,20 @@
 
 .modal-footer a:hover {
   cursor: pointer;
+}
+
+span {
+  animation-duration: 1s;
+  animation-name: slidein;
+}
+
+@keyframes slidein {
+  from {
+    margin-left: 10%;
+    width: 100%;
+  }
+  to {
+    margin-left: 0%;
+    width: 100%;
+  }
 }
