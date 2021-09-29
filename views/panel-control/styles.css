@@ -13,6 +13,16 @@
 
 body {
   position: relative;
+  background-color: #FDF7F7;
+}
+
+a {
+  text-decoration: none;
+  color: #FDFEFE;
+}
+
+a:hover {
+  color: #212121;
 }
 
 .container {

@@ -12,7 +12,7 @@
 	<div class="container">
 		<h1 class="titulo-seccion"> Panel de control <img width="40px" heigth="40px" src="../../assets/control.png" alt=""></h1>
 		<div class="panel-container">
-			<button class="btn btn-panel-control">Administrar Niveles</button>
+			<button class="btn btn-panel-control"><a href="../administrar-niveles/administrar-niveles.php">Administrar Niveles</a></button>
 			<button class="btn btn-panel-control">Administrar Noticias</button>
 			<button class="btn btn-panel-control">Administrar Cuestionarios</button>
 			<button class="btn btn-panel-control">Administrar Centros de reciclaje</button>
