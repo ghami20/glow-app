@@ -1,0 +1,33 @@
+.form {
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.input-form {
+  width: 100%;
+  height: 3rem;
+  margin-top: 2rem;
+  padding-left: 1rem;
+  border: 0px;
+  outline: none;
+  background-color: rgb(197, 255, 214);
+  border-radius: 5px;
+}
+
+.btn {
+  margin-top: 2rem;
+  margin-bottom: 1.5rem;
+  background-color: #2ECC71;
+  color: #FDFEFE;
+}
+
+.modal-footer {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
+.modal-footer a:hover {
+  cursor: pointer;
+}

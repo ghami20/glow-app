@@ -1,0 +1,141 @@
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+
+body {
+	font-family: 'Montserrat', sans-serif;
+	position: relative;
+	min-height: 150vh;
+}
+
+.bg_rgba1 {
+  background: linear-gradient(0deg, rgba(0, 0, 0, 1), rgba(255, 255, 255, 0.2)), url('./assets/john-cameron-QukrVl1F9Q0-unsplash.jpg');
+  height: 500px;
+  border: 1px solid black;
+}
+
+.bg_rgba2 {
+  background: linear-gradient(0deg, rgba(0, 0, 0, 1), rgba(255, 255, 255, 0.2)), url('./assets/nick-fewings--2lJGRIY5P0-unsplash.jpg');
+  height: 500px;
+  border: 1px solid black;
+}
+
+.btn-sesion {
+	background-color: #FFB26B;
+}
+.carousel-caption h5{
+	font-weight: bold;
+	font-size: 30px;
+	text-align: center;
+}
+
+.carousel-container {
+	width: 100%;
+}
+
+.carousel-item {
+	height: 300px;
+}
+
+.filter-by {
+	width: 100%;
+	display: inline-flex;
+	justify-content: space-around;
+	align-items: center	;
+}
+
+.footer {
+	width: 100%;
+	height: 100px;
+	position: absolute;
+	bottom: 0;
+	background-color: rgb(255, 102, 0);
+	box-shadow: 0px -6px 19px -9px rgba(0,0,0,0.75);
+}
+
+
+.footer ul {
+	width: 100%;
+	height: 50px;
+	padding-left: 0;
+	list-style: none;
+	display: inline-flex;
+	justify-content: space-around;
+	align-items: center;
+}
+
+.footer i:hover {
+	cursor: pointer;
+}
+
+.logo {
+	color: rgb(255, 102, 0)
+}
+
+.map-container{
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	align-items: center;
+}
+
+.map-img{
+	width: 80%;
+	height: 80%;
+	border-radius: 10px;
+	margin-top: 1rem;
+	box-shadow: 0px 0px 11px -2px rgba(0,0,0,0.75);
+}
+.modal-body {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+.modal-body a {
+	width: 100%;
+	min-height: 50px;
+	display: inline-flex;
+	justify-content: center;
+	align-items: center;
+	border-left: 5px solid green;
+	margin-bottom: 5px;
+}
+
+.modal-body a:hover {
+	cursor: pointer;
+}
+
+.modal-body span {
+	margin-left: 1rem;
+}
+
+.section-container {
+	width: 100%;
+	min-height: 100vh;
+}
+
+@media screen and (min-width: 400px) {
+	body {
+		min-height: 120vh;
+	}
+	.map-img {
+		width: 70%;
+		height: 70%;
+	}
+}
+
+@media screen and (min-width: 400px) {
+	body {
+		min-height: 140vh;
+	}
+}
+
+@media screen and (min-width: 800px) {
+	body {
+		min-height: 180vh;
+	}
+	
+}
